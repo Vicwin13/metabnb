@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: rgba(160, 34, 121, 1);
+    --bg-color: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    --red-rose: Red Rose;
+}
+
+.contain {
+    margin-top: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    padding: .5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.connect {
+    padding: .8rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.pics {
+    border-radius: 15px;
+
+}
+
+.pics img {
+    width: 14.6rem;
+    object-fit: cover;
+}
+
+.pic-container {
+    display: flex;
+    gap: .4rem;
+    min-height: 33rem
+}
+
+.pic-container>div:first-child {
+    align-self: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.text h1 {
+    font-weight: 700;
+    font-family: var(--red-rose);
+    font-size: 3rem;
+}
+
+.text h1 span {
+    color: var(--main-color);
+}
+
+.text p {
+
+    width: 38rem;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: var(--red-rose);
+    line-height: 20px;
+}
+
+.input {
+    margin-top: 2rem;
+
+}
+
+.input input {
+    padding: 1rem;
+    border: 1px solid rgba(163, 163, 163, 1);
+    border-radius: 8px 0px 0px 8px;
+}
+
+.input input:active {
+    border: none;
+}
+
+.input button {
+    padding: 1.05rem 3rem;
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.banner {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.banner>div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: .4rem;
+    gap: .5rem;
+}
+
+.banner>div img {
+    object-fit: contain;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    row-gap: .8rem;
+    place-items: center;
+}
+
+.sep {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 12px;
+    padding: .3rem;
+}
+
+
+.frame-pics img {
+
+    object-fit: cover;
+}
+
+.ad-container {
+    border: 1px solid gray;
+    width: min-content;
+    padding: .5rem;
+    border-radius: 15px;
+    width: 18rem;
+    text-align: center;
+}
+
+.stars {
+    text-align: left;
+    object-fit: contain;
+    display: flex;
+    gap: .3rem;
+    padding: .3rem;
+
+}
+
+.stars img {
+    width: .75rem;
+}
+
+.learn {
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 5rem; */
+    margin-top: 3rem;
+    height: 45rem;
+
+}
+
+
+
+.learn-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+.learn-text p {
+    width: 25rem;
+    font-size: 18px;
+    line-height: 2.2rem;
+}
+
+.learn img {
+
+    width: 40rem;
+}
+
+.learn button {
+    margin-top: 2.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: var(--main-color);
+
+}
+
+footer {
+    background-color: rgba(29, 29, 30, 1);
+    ;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+
+}
+
+footer>div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer>div>a:first-child {
+    font-weight: 700;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.logo-icon {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.community a,
+.places a,
+.about a {
+    padding: .5rem 0;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}

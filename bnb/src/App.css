@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: rgba(160, 34, 121, 1);
+    --bg-color: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+    --red-rose: 'Red Rose, san-serif';
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    font-family: var(--red-rose);
+}
+
+.home {
+    margin: 0 5%;
+}
