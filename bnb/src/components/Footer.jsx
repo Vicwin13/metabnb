@@ -36,8 +36,9 @@ const Footer = () => {
           <a href="">Career</a>
           <a href="">Contact us</a>
         </div>
+
+        <p className="last"> &copy; 2022 Metabnb</p>
       </footer>
-      <p></p>
     </>
   );
 };

@@ -1,0 +1,19 @@
+.options {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-shrink: 8;
+}
+
+.options a {
+    text-decoration: none;
+    color: black;
+}
+
+.setting {
+    display: flex;
+    padding: .8rem;
+    border: 1px solid rgba(180, 180, 180, 1);
+    border-radius: 8px;
+    gap: 1rem;
+}

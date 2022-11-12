@@ -1,5 +1,6 @@
 import "./styled/home.css";
 
+import { Link } from "react-router-dom";
 import logo from "../images/Logo.png";
 
 const Navbar = () => {
@@ -11,7 +12,9 @@ const Navbar = () => {
         </div>
         <div className="links">
           <a href="">Home</a>
-          <a href="">Place to stay</a>
+          <Link to={"/placetostay"} title=" Place to stay">
+            Place to stay
+          </Link>
           <a href="">NFTs</a>
           <a href="">Community</a>
         </div>
