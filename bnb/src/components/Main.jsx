@@ -5,7 +5,7 @@ import image4 from "../images/image 6.png";
 
 const Main = () => {
   return (
-    <main>
+    <main className="main">
       <div className="text">
         <h1>
           Rent a <span>Place</span> away from

@@ -50,7 +50,7 @@
     align-self: center;
 }
 
-main {
+.main {
     display: flex;
     justify-content: space-between;
     margin-top: 5rem;
@@ -121,7 +121,10 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     row-gap: .8rem;
+    width: 90%;
+
     place-items: center;
+    margin: 1rem auto;
 }
 
 .sep {

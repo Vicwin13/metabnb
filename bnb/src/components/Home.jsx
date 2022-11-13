@@ -3,6 +3,7 @@ import "../App.css";
 import Adventure from "./Adventure";
 import Banner from "./Banner";
 import Footer from "./Footer";
+import Header from "./Header";
 import Learn from "./Learn";
 import Main from "./Main";
 
@@ -14,8 +15,10 @@ function Home() {
       </div>
       <Banner />
       <div className="home">
-        <Adventure />
+        <Header />
       </div>
+      <Adventure />
+
       <Learn />
       <Footer />
     </>

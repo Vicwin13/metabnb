@@ -3,6 +3,7 @@
     align-items: center;
     gap: 4rem;
     flex-shrink: 8;
+    margin: 4rem 0;
 }
 
 .options a {

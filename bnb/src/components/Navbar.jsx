@@ -11,7 +11,9 @@ const Navbar = () => {
           <img src={logo} alt="" />
         </div>
         <div className="links">
-          <a href="">Home</a>
+          <Link to={"/"} title="Home page">
+            Home
+          </Link>
           <Link to={"/placetostay"} title=" Place to stay">
             Place to stay
           </Link>

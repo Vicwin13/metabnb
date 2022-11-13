@@ -1,4 +1,4 @@
-const AdventureList = ({ lists, title }) => {
+const AdventureList = ({ lists }) => {
   return (
     <>
       {lists.map((list) => (
