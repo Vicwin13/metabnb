@@ -252,3 +252,59 @@ footer>div>a:first-child {
     position: absolute;
     bottom: 2rem;
 }
+
+.popup-wallet {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(64, 64, 64, 0.3);
+    display: grid;
+    place-content: center;
+    /* visibility: hidden; */
+
+}
+
+hr {
+    border: .5px solid gainsboro;
+}
+
+.popup {
+    background: white;
+    width: 37rem;
+    border-radius: 16px;
+}
+
+.topside,
+.downside {
+    padding: 1.5rem;
+}
+
+.topside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meta-wallet,
+.coin-wallet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem;
+    margin-top: .5rem;
+    border: 1px solid #CFD8DC;
+    background: rgba(207, 216, 220, 1);
+    border-radius: 12px;
+}
+
+.meta-wallet>div,
+.coin-wallet>div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .display-wallet {
+    visibility: visible;
+} */

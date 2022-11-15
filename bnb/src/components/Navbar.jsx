@@ -3,7 +3,7 @@ import "./styled/home.css";
 import { Link } from "react-router-dom";
 import logo from "../images/Logo.png";
 
-const Navbar = () => {
+const Navbar = ({ open, setOpen }) => {
   return (
     <header className="contain">
       <nav className="navbar">
@@ -21,7 +21,9 @@ const Navbar = () => {
           <a href="">Community</a>
         </div>
 
-        <button className="connect">Connect wallet</button>
+        <button onClick={() => setOpen(true)} className="connect">
+          Connect wallet
+        </button>
       </nav>
     </header>
   );
