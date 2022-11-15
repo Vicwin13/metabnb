@@ -8,12 +8,19 @@
 
 .contain {
     margin-top: 2rem;
+    position: relative;
+
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+
+.links {
+    display: none;
 }
 
 .links a {
@@ -28,6 +35,20 @@
     border: none;
     background-color: var(--main-color);
     color: white;
+}
+
+.menu img {
+    width: 2rem;
+
+}
+
+
+
+.end-side {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+
 }
 
 .pics {
@@ -59,7 +80,8 @@
 .text h1 {
     font-weight: 700;
     font-family: var(--red-rose);
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+
 }
 
 .text h1 span {
@@ -68,9 +90,9 @@
 
 .text p {
 
-    width: 38rem;
+    max-width: fit-content;
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(.8rem, 2vw, 1rem);
     font-family: var(--red-rose);
     line-height: 20px;
 }
@@ -78,12 +100,15 @@
 .input {
     margin-top: 2rem;
 
+    width: auto;
+
 }
 
 .input input {
     padding: 1rem;
     border: 1px solid rgba(163, 163, 163, 1);
     border-radius: 8px 0px 0px 8px;
+
 }
 
 .input input:active {
@@ -122,7 +147,6 @@
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     row-gap: .8rem;
     width: 90%;
-
     place-items: center;
     margin: 1rem auto;
 }
@@ -169,7 +193,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* padding: 5rem; */
     margin-top: 3rem;
     height: 45rem;
 
@@ -178,15 +201,15 @@
 
 
 .learn-text h1 {
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 700;
     padding-bottom: 1.5rem;
 }
 
 .learn-text p {
-    width: 25rem;
-    font-size: 18px;
-    line-height: 2.2rem;
+    max-width: 25rem;
+    font-size: clamp(.8rem, 3vw, 1rem);
+    line-height: clamp(1.2rem, 3vw, 2.2rem);
 }
 
 .learn img {
@@ -220,7 +243,8 @@ footer>div {
 }
 
 footer>div>a:first-child {
-    font-weight: 700;
+    font-weight: 800;
+    font-size: clamp(.9rem, 3vw, 1rem);
 }
 
 .icons {
@@ -237,6 +261,8 @@ footer>div>a:first-child {
     position: relative;
 
 }
+
+
 
 .community a,
 .places a,
@@ -261,8 +287,6 @@ footer>div>a:first-child {
     background: rgba(64, 64, 64, 0.3);
     display: grid;
     place-content: center;
-    /* visibility: hidden; */
-
 }
 
 hr {
@@ -305,6 +329,122 @@ hr {
     gap: 1rem;
 }
 
-/* .display-wallet {
-    visibility: visible;
-} */
+
+@media screen and (min-width: 775px) {
+
+    .menu {
+        display: none;
+    }
+
+    .links {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .main {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .pic-container {
+        margin: 3rem 0;
+        min-height: 100%;
+
+    }
+
+    .learn {
+        justify-content: center;
+        height: 35rem;
+        padding: 0 2rem;
+
+    }
+
+    .learn img {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .learn img {
+        width: 20em;
+    }
+
+    footer {
+        padding: 5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .learn img {
+        display: none;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .learn {
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 0 0 5rem 0;
+    }
+
+    .logo-icon {
+        justify-content: center;
+    }
+
+    .logo-icon>img {
+        margin: 0 auto;
+    }
+
+    .icons {
+        align-self: center;
+    }
+
+    footer p {
+
+
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .pic-container div:last-child .pics:first-child,
+    .pic-container div:last-child .pics:last-child {
+        display: none;
+    }
+
+    .logo img {
+
+        max-width: 8rem;
+    }
+
+    .connect {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 446px) {
+    .input input {
+        border-radius: 8px;
+    }
+
+    .input button {
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
+
+    .learn {
+        height: auto;
+        padding: 5rem 2rem;
+    }
+}

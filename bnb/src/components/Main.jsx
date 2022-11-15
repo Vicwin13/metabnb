@@ -16,7 +16,7 @@ const Main = () => {
 
         <p>
           we provide you access to luxury and affordable houses in the
-          metaverse, get a chance to turn you r imagination to reality to your
+          metaverse, get a chance to turn your imagination to reality to your
           comfort zone
         </p>
 
