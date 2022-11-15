@@ -2,8 +2,24 @@
     display: flex;
     align-items: center;
     gap: 4rem;
-    flex-shrink: 8;
     margin: 4rem 0;
+
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+
+}
+
+.drop {
+    display: none;
+}
+
+.drop img {
+    width: 2rem;
 }
 
 .options a {
@@ -17,4 +33,38 @@
     border: 1px solid rgba(180, 180, 180, 1);
     border-radius: 8px;
     gap: 1rem;
+}
+
+@media screen and (max-width: 1130px) {
+    .option {
+        gap: 2rem;
+    }
+
+    .options {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .option {
+        gap: 1rem;
+    }
+
+    .options {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .option {
+        display: none;
+    }
+
+    .options {
+        justify-content: space-between;
+    }
+
+    .drop {
+        display: block;
+    }
 }
