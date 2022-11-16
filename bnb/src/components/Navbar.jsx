@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import logo from "../images/Logo.png";
 import menu from "../images/icons8-menu-rounded-50.png";
 
-const Navbar = ({ setOpen }) => {
+const Navbar = ({ setOpen, setDrop }) => {
   return (
     <>
       <header className="contain">
@@ -27,7 +27,7 @@ const Navbar = ({ setOpen }) => {
           <div className="end-side">
             <Connect setOpen={setOpen} />
             <div className="menu">
-              <img src={menu} alt="" />
+              <img onClick={() => setDrop(true)} src={menu} alt="" />
             </div>
           </div>
         </nav>

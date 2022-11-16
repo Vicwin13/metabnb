@@ -35,6 +35,42 @@
     gap: 1rem;
 }
 
+.side-cancel {
+    position: absolute;
+}
+
+.aside {
+
+    min-width: 12rem;
+    background-color: gainsboro;
+    margin: 2rem;
+    position: absolute;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.side-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.side-links a {
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+.side-links a:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: .5s;
+}
+
 @media screen and (max-width: 1130px) {
     .option {
         gap: 2rem;

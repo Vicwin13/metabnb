@@ -29,12 +29,19 @@
     color: black;
 }
 
-.connect {
+.connect,
+.side-connect {
     padding: .8rem;
     border-radius: 8px;
     border: none;
     background-color: var(--main-color);
     color: white;
+}
+
+.side-connect {
+    display: none;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .menu img {
@@ -295,7 +302,7 @@ hr {
 
 .popup {
     background: white;
-    width: 37rem;
+    width: 21rem;
     border-radius: 16px;
 }
 
@@ -430,6 +437,10 @@ hr {
 
     .connect {
         display: none;
+    }
+
+    .side-connect {
+        display: block;
     }
 }
 
