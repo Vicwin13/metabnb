@@ -71,7 +71,7 @@
 .pic-container {
     display: flex;
     gap: .4rem;
-    min-height: 33rem
+    min-height: 33rem;
 }
 
 .pic-container>div:first-child {
@@ -349,16 +349,10 @@ hr {
 }
 
 @media screen and (max-width: 1035px) {
-    .main {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
 
-    .pic-container {
-        margin: 3rem 0;
-        min-height: 100%;
+    .pics img {
 
+        width: 12rem;
     }
 
     .learn {
@@ -378,23 +372,38 @@ hr {
         width: 20em;
     }
 
+
+    .pic-container {
+        margin: 3rem 0 0;
+    }
+
+    .main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     footer {
         padding: 5rem 2rem;
     }
 }
 
 @media screen and (max-width: 725px) {
-    .learn img {
-        display: none;
+    .learn {
+        flex-wrap: wrap;
+        height: auto;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .learn-text {
+        padding: 2rem 0;
     }
 
     .banner {
-        display: none;
+        flex-direction: column;
     }
 
-    .learn {
-        height: 20rem;
-    }
+
 }
 
 @media screen and (max-width: 555px) {
@@ -425,10 +434,7 @@ hr {
         justify-content: center;
     }
 
-    .pic-container div:last-child .pics:first-child,
-    .pic-container div:last-child .pics:last-child {
-        display: none;
-    }
+
 
     .logo img {
 
@@ -445,17 +451,29 @@ hr {
 }
 
 @media screen and (max-width: 446px) {
+
     .input input {
-        border-radius: 8px;
+        width: 10rem;
     }
 
     .input button {
-        border-radius: 8px;
-        margin-top: 1rem;
+        width: 6rem;
+        text-align: center;
+        padding: 1.05rem .2rem;
     }
 
     .learn {
         height: auto;
         padding: 5rem 2rem;
     }
+
+    .pics img {
+        width: 9rem;
+    }
+
+    .pic-container {
+        height: 2rem;
+        min-height: 22rem;
+    }
+
 }
